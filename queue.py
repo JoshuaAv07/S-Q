@@ -31,3 +31,5 @@ class Queue(Structure):
             current.next = None
 
         self._size-= 1 
+
+        return current.data

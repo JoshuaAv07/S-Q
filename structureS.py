@@ -9,7 +9,7 @@ class Structure:
         return self._size
 
     def front(self):
-        if self.front:
+        if self._front:
             return self._front.data
         else:
             raise Exception("This method does not exist")

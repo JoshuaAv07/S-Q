@@ -1,32 +1,18 @@
 from queue import Queue
-from structure import Structure
 
 my_queue = Queue()
 
 print(f'Queue top = {my_queue.front()}')
 print(f'Queue size = {my_queue.size()}')
-print(f'If queue is empty = {my_queue.empty()}')
+print(f'If queue is empty = {my_queue.empty()}\n')
 
-my_queue.push_back("Jonathan")
-my_queue.push_back("Joshua")
-my_queue.push_back("Daniel")
-my_queue.push_back("Luis")
-my_queue.push_back("Fabian")
-my_queue.push_back("Kevin")
-my_queue.push_back("Gustavo")
-my_queue.push_back("Derek")
-my_queue.push_back("Alex")
-my_queue.push_back("David")
-my_queue.push_back("Isaac")
+n = int(input("How many countries you are going to enter: "))
+for i in range(1,n+1):
+    my_queue.push_back(input(f"{i}: "))
 
 print(f'Queue top = {my_queue.front()}')
 print(f'Queue size = {my_queue.size()}')
-print(f'If queue is empty = {my_queue.empty()}')
-
-print('\nQueue elements\n')
-
-for student in my_queue.iter():
-    print(student)
+print(f'If queue is empty = {my_queue.empty()}\n')
 
 print('\nQueue elements\n')
 

@@ -11,7 +11,7 @@ class Stack(Structure):
 
     def top(self):
         if self._top:
-            return self._top
+            return self._top.data
         else:
             return "None"
 
@@ -27,6 +27,7 @@ class Stack(Structure):
             yield data
 
     def push(self, data):
+        ''' Inserts a new element at the end of the queue '''
         node = Node(data)
 
         if self._top == None:
@@ -38,6 +39,7 @@ class Stack(Structure):
         self._size+=1
 
     def pop(self):
+        ''' Deleted the last element in the queue '''
         top = self._top
         new_node = self._top.prev
         self._top = new_node
