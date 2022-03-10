@@ -32,6 +32,7 @@ class Structure:
         self._size = 0
 
     def iter(self):
+        ''' Brings the values of the stack'''
         current = self._front
 
         while current:

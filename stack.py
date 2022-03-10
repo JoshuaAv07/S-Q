@@ -10,6 +10,7 @@ class Stack(Structure):
         self._size = 0
 
     def top(self):
+        ''' Returns the value at the top of the stack '''
         if self._top:
             return self._top.data
         else:
@@ -20,6 +21,7 @@ class Stack(Structure):
         self._size = 0
 
     def iter(self):
+        ''' Brings the values of the stack'''
         current = self._top
         while current:
             data = current.data

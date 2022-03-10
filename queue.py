@@ -3,6 +3,7 @@ from structure import Structure
 
 
 class Queue(Structure):
+    ''' Class that describes a Queue '''
 
     def __init__(self):
         super().__init__()

@@ -16,6 +16,7 @@ print(f'If stack is empty = {my_stack.empty()}\n')
 
 print('\nStack elements\n')
 
+#displays the content as a list
 for student in my_stack.iter():
     print(student)
 
@@ -24,5 +25,6 @@ print(my_stack.pop())
 
 print('\nStack elements\n')
 
+#displays the content as a list
 for student in my_stack.iter():
     print(student)
